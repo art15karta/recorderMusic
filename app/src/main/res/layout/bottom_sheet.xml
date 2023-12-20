@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/standartBottomSheet"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_round"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_record"
+        android:textSize="26sp"
+        android:layout_marginTop="@dimen/btn_size"
+        android:textAlignment="center" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/filenameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="80dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="@string/cancel"
+            android:background="@color/gray"
+            android:textColor="@color/grayDark"
+            app:cornerRadius="26dp"
+            app:rippleColor="@color/grayDark">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOkay"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="@string/ok"
+            android:background="@color/strokeColor"
+            android:textColor="@color/white"
+            app:cornerRadius="26dp"
+            app:rippleColor="@color/grayDark">
+
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+</LinearLayout>

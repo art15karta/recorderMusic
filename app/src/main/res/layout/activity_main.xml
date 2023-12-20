@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnRecord"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/baseline_fiber_manual_record_24"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/ic_record"
+            android:layout_gravity="center" />
+
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startTime"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+        <com.example.androidrecorder.WaveFormView
+            android:id="@+id/waveformView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="280px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="80dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnPause"
+                android:layout_width="@dimen/btn_size"
+                android:layout_height="@dimen/btn_size"
+                android:layout_margin="6dp"
+                android:src="@drawable/outline_pause_24"
+                android:background="@drawable/ic_ripple"/>
+
+            <ImageButton
+                android:id="@+id/btnSave"
+                android:layout_width="@dimen/btn_size"
+                android:layout_height="@dimen/btn_size"
+                android:layout_margin="6dp"
+                android:src="@drawable/outline_save_24"
+                android:background="@drawable/ic_ripple"/>
+
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="@dimen/btn_size"
+                android:layout_height="@dimen/btn_size"
+                android:layout_margin="6dp"
+                android:src="@drawable/outline_delete_24"
+                android:background="@drawable/ic_ripple"/>
+
+
+            <ImageButton
+                android:id="@+id/btnList"
+                android:layout_width="@dimen/btn_size"
+                android:layout_height="@dimen/btn_size"
+                android:layout_margin="6dp"
+                android:src="@drawable/outline_format_list_bulleted_24"
+                android:background="@drawable/ic_ripple"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
